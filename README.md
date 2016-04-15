@@ -229,6 +229,7 @@ sudo apt-get install refind
 ```
 2. `sudo nano /etc/default/grub` to set the grub timeout:
 ```
-GRUB_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT=0.0
+GRUB_TIMEOUT=0.0
 ```
 3. `sudo update-grub`
