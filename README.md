@@ -71,6 +71,7 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236),
 
 ```
 sudo apt-get install terminator
+sudo apt-get remove gnome-terminal
 ```
 
 
