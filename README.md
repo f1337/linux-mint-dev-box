@@ -211,7 +211,12 @@ sudo ufw enable
 
 ## Disable Hibernation
 
-TODO
+1. Move the hibernate pkla somewhere safe:
+```
+mkdir ~/.disable-hibernate
+sudo mv /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla ~/.disable-hibernate/
+```
+2. Reboot and Hibernate should disappear from the various menus.
 
 
 ## Beautify Grub
