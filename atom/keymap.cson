@@ -1,0 +1,10 @@
+'.platform-win32, .platform-linux':
+  'cmd-shift-F': 'project-find:show'
+'atom-workspace, atom-workspace atom-text-editor':
+  'cmd-shift-M': 'markdown-preview:toggle'
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-/': 'editor:toggle-line-comments'
+'.platform-win32, .platform-linux':
+  'cmd-\\': 'tree-view:toggle'
+'.platform-linux, .platform-linux .command-palette atom-text-editor':
+  'cmd-shift-P': 'command-palette:toggle'

@@ -58,9 +58,13 @@ cp autokeys/*.py ~/.config/autokeys/data/superb/
 cp autokeys/.* ~/.config/autokeys/data/superb/
 ```
 
-cf. https://support.apple.com/en-us/HT201236,
-https://github.com/autokey/autokey/wiki/Special-Keys,
-https://github.com/metakermit/dotfiles/tree/master/autokey
+Many thanks to Dražen Lučanin for publishing his
+[autokey dotfiles](https://github.com/metakermit/dotfiles/tree/master/autokey),
+from which these were derived.
+
+cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236),
+[AutoKey Special Keys](https://github.com/autokey/autokey/wiki/Special-Keys)
+
 
 
 ## Install Terminator
@@ -139,8 +143,10 @@ sudo dpkg -i atom-amd64.deb
 ```
 apm install atom-pair
 ```
-4. Copy my Atom keymap.cson for mac-style command-shortcuts
-
+4. Copy my Atom keymap.cson for mac-style command-shortcuts:
+```
+cp atom/keymap.cson ~/.atom/
+```
 
 
 ## Install Slack
