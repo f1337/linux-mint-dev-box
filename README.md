@@ -69,7 +69,6 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236),
 [AutoKey Special Keys](https://github.com/autokey/autokey/wiki/Special-Keys)
 
 
-
 ## Install Terminator
 
 ```
@@ -113,7 +112,6 @@ sudo apt-get install cairo-dock
 ```
 
 After cairo-dock is installed and running, remove the task windows applet from the top panel.
-
 
 
 ## Install Synapse
