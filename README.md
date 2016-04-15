@@ -219,6 +219,16 @@ sudo mv /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
 2. Reboot and Hibernate should disappear from the various menus.
 
 
-## Beautify Grub
+## A Better Boot Menu
 
-TODO
+1. Install ReFind:
+```
+sudo apt-add-repository ppa:rodsmith/refind
+sudo apt-get update
+sudo apt-get install refind
+```
+2. `sudo nano /etc/default/grub` to set the grub timeout:
+```
+GRUB_TIMEOUT=0
+```
+3. `sudo update-grub`

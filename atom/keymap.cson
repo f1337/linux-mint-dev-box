@@ -8,3 +8,5 @@
   'cmd-\\': 'tree-view:toggle'
 '.platform-linux, .platform-linux .command-palette atom-text-editor':
   'cmd-shift-P': 'command-palette:toggle'
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'cmd-e': 'find-and-replace:use-selection-as-find-pattern'
