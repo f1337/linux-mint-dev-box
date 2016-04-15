@@ -36,57 +36,31 @@ Menu > Administration > Update Manager
 * Update everything, until there is nothing more to update
 
 
-## Swap Left Alt and Control
+## Hijack Caps Lock
 
-WIP.
-Ideally I'd like to remap the Super (Windows) key w/ custom shortcuts instead.
+System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose "Make Caps Lock an additional Ctrl"
 
+
+## Mac-Style "Super" Shortcuts
+
+To use the <super> (Windows or Command) key for Mac-style shortcuts:
+
+1. System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
+2. Install AutoKey
 ```
-nano ~/.Xmodmap
+sudo apt-get install autokey-gtk
+```
+3. Run autokey, then Edit > Preferences > Choose "Automatically start AutoKey at login"
+4. Delete the pre-installed sample scripts in autokey, then File > New > Folder > Use Default > superb
+5. Copy my autokeys to your newly created autokey folder:
+```
+cp autokeys/*.py ~/.config/autokeys/data/superb/
+cp autokeys/.* ~/.config/autokeys/data/superb/
 ```
 
-In nano, past the following:
-
-```
-clear control
-clear mod1
-keycode 37 = Alt_L Meta_L
-keycode 64 = Control_L
-add control = Control_L Control_R
-add mod1 = Alt_L Meta_L
-```
-
-Save the file, then `xmodmap ~/.Xmodmap`
-
-
-### TODO
-
-#### custom
-
-Super+c => Ctrl+Insert
-Super+v => Shift+Insert
-Super+x => Shift+Delete
-Super+g => F3
-Super+shift+g => Shift-F3
-Super+w => Close Window
-Super+m => Minimize Window
-Super-Tab => Alt tab
-Super-q => quit
-Super-rtarrow => End
-Super-lftarrow => Home
-Super-uparrow => pageup
-Super-downarrow => pagedown
-
-
-#### alias to ctrl-command?
-
-Super-a
-Super-f
-Super-n
-Super-z & Super-shift-z
-
-
-
+cf. https://support.apple.com/en-us/HT201236,
+https://github.com/autokey/autokey/wiki/Special-Keys,
+https://github.com/metakermit/dotfiles/tree/master/autokey
 
 
 ## Install Terminator
@@ -153,14 +127,20 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
 
-## Install Atom
+## Install Atom and Its Packages
 
-Download the latest 64-bit .deb package from https://atom.io/
-
+1. Download the latest 64-bit .deb package from https://atom.io/
+2. Install it using `dpkg`:
 ```
 cd ~/Downloads
 sudo dpkg -i atom-amd64.deb
 ```
+3. Install packages:
+```
+apm install atom-pair
+```
+4. Copy my Atom keymap.cson for mac-style command-shortcuts
+
 
 
 ## Install Slack
