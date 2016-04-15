@@ -2,11 +2,14 @@
 
 A basic Linux Mint setup for software development
 
+
 ## Set Dvorak Layout for Login
 
 See http://unix.stackexchange.com/a/136383, but use the following keymap:
 
 `/usr/bin/setxkbmap dvorak`
+
+System Settings > Keyboard > Layouts > Options > Switching to another layout: Choose "Menu"
 
 
 ## Install NVIDIA Drivers
@@ -130,6 +133,11 @@ Download the latest 64-bit .deb package from from https://www.google.com/chrome/
 cd ~/Downloads
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
+
+Chrome 64-bit on Linux is known to experience random freezes with certain video drivers when hardware acceleration is enabled.
+To disable hardware acceleration Chrome > Settings > Advanced > System > uncheck "Use hardware acceleration when available", then restart Chrome.
+
+cf. http://www.phoronix.com/scan.php?page=news_item&px=MTYyMDk, http://www.techsupportforum.com/forums/f64/solved-system-freezing-continuously-while-running-chrome-840698.html#post5291842
 
 
 ## Install Atom and Its Packages
