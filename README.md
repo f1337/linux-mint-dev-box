@@ -48,9 +48,11 @@ System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose 
 
 To use the <super> (Windows or Command) key for Mac-style shortcuts:
 
-1. System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
+1. If using a Windows keyboard, System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
 2. System Settings > Keyboard > Shortcuts
   * General
+    * Toggle Scale: Ctrl-Down
+    * Toggle Expo: Ctrl-Up
     * Cycle through open windows: Super-Tab
     * Cycle backwards through open windows: Shift-Super-Tab
     * Cycle through open windows of the same application: Super-grave
@@ -60,7 +62,16 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
   * Workspaces
     * Switch to left workspace: Ctrl-Left
     * Switch to right workspace: Ctrl-Right
+    * Direct Navigation
+      * Switch to workspace 1: Ctrl-1
+      * Switch to workspace 2: Ctrl-2
+      * etc., as needed
   * System
+    * Log out: Shift-Super-q
+    * Shut down: Ctrl-Alt-Super-Eject (use Delete or similar if no eject button on keyboard)
+    * Lock Screen: Ctrl-Shift-Eject (use Delete or similar if no eject button on keyboard)
+    * Suspend: Alt-Super-Eject (use Delete or similar if no eject button on keyboard)
+    * Restart Cinnamon: Alt-Super-Escape
     * Screenshots and Recording
       * Take a screenshot: Shift-Super-numbersign
       * Take a screenshot of a window: Shift-Super-dollar
@@ -92,6 +103,10 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236),
 sudo apt-get install terminator
 sudo apt-get remove gnome-terminal
 ```
+
+Terminator > Preferences > Profiles > Scrolling
+* Scrollback: 3500 lines
+* Disable "Scroll on output"
 
 
 ## Setup Mouse Natural Scrolling
@@ -141,6 +156,8 @@ sudo apt-get install synapse
 
 
 ## Install Chrome
+
+UPDATE: Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments. I have switched to Firefox for the time being.
 
 Download the latest 64-bit .deb package from from https://www.google.com/chrome/browser.
 
