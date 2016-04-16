@@ -59,6 +59,7 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
     * Cycle backwards through open windows of the same application: Shift-Super-tilde
   * Windows
     * Minimize window: Super-m
+    * Show desktop: Super-F3
   * Workspaces
     * Switch to left workspace: Ctrl-Left
     * Switch to right workspace: Ctrl-Right
@@ -71,10 +72,15 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
     * Shut down: Ctrl-Alt-Super-Eject (use Delete or similar if no eject button on keyboard)
     * Lock Screen: Ctrl-Shift-Eject (use Delete or similar if no eject button on keyboard)
     * Suspend: Alt-Super-Eject (use Delete or similar if no eject button on keyboard)
-    * Restart Cinnamon: Alt-Super-Escape
     * Screenshots and Recording
       * Take a screenshot: Shift-Super-numbersign
       * Take a screenshot of a window: Shift-Super-dollar
+  * Custom Shortcuts > Add custom shortcut
+    * Name: Force quit
+    * Command: /usr/bin/xkill
+    * Keyboard bindings: Alt-Super-Escape
+
+`xkill` is a litte different than Force Quit (Mac) or Task Manager (Windows): it provides a graphical 'X' cursor which you then use to left-click on the window you wish to force-quit. It can be canceled with any mouse click other than left.
 
 
 2. Install AutoKey
