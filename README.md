@@ -172,17 +172,13 @@ cd ~/Downloads
 tar -xvJf tor-browser-linux64-5.5.4_en-US.tar.xz
 mv tor-browser_en-US/ ~/.tor-browser_en-US
 cd ~/.tor-browser_en-US/
-./start-tor-browser.desktop
-```
-3. Once Tor Browser runs for the first time, copy the shortcut to the Desktop:
-```
-cp ~/.tor-browser_en-US/start-tor-browser.desktop ~/Desktop/
+./start-tor-browser.desktop --register-app
 ```
 
 
-## Install Chrome
+## Don't Install Chrome
 
-UPDATE: Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments. I have switched to Firefox for the time being.
+**UPDATE:** Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments. I have switched to Firefox for the time being.
 
 Download the latest 64-bit .deb package from from https://www.google.com/chrome/browser.
 
