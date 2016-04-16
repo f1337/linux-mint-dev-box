@@ -161,6 +161,25 @@ sudo apt-get install synapse
 ```
 
 
+## Install Tor browser
+
+DO NOT USE A THIRD-PARTY PPA TO INSTALL Tor!
+
+1. Download the latest 64-bit installer from https://www.torproject.org/download/download-easy.html.en
+2. Install it using `dpkg`:
+```
+cd ~/Downloads
+tar -xvJf tor-browser-linux64-5.5.4_en-US.tar.xz
+mv tor-browser_en-US/ ~/.tor-browser_en-US
+cd ~/.tor-browser_en-US/
+./start-tor-browser.desktop
+```
+3. Once Tor Browser runs for the first time, copy the shortcut to the Desktop:
+```
+cp ~/.tor-browser_en-US/start-tor-browser.desktop ~/Desktop/
+```
+
+
 ## Install Chrome
 
 UPDATE: Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments. I have switched to Firefox for the time being.
