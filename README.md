@@ -49,6 +49,23 @@ System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose 
 To use the <super> (Windows or Command) key for Mac-style shortcuts:
 
 1. System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
+2. System Settings > Keyboard > Shortcuts
+  * General
+    * Cycle through open windows: Super-Tab
+    * Cycle backwards through open windows: Shift-Super-Tab
+    * Cycle through open windows of the same application: Super-grave
+    * Cycle backwards through open windows of the same application: Shift-Super-tilde
+  * Windows
+    * Minimize window: Super-m
+  * Workspaces
+    * Switch to left workspace: Ctrl-Left
+    * Switch to right workspace: Ctrl-Right
+  * System
+    * Screenshots and Recording
+      * Take a screenshot: Shift-Super-numbersign
+      * Take a screenshot of a window: Shift-Super-dollar
+
+
 2. Install AutoKey
 ```
 sudo apt-get install autokey-gtk
