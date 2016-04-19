@@ -176,9 +176,10 @@ cd ~/.tor-browser_en-US/
 ```
 
 
-## Don't Install Chrome
+## Install Chrome
 
-**UPDATE:** Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments. I have switched to Firefox for the time being.
+**UPDATE:** Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments.
+However, it is the only Linux browser supported by Netflix and Amazon Prime Video.
 
 Download the latest 64-bit .deb package from from https://www.google.com/chrome/browser.
 
@@ -295,3 +296,19 @@ GRUB_HIDDEN_TIMEOUT=0.0
 GRUB_TIMEOUT=0.0
 ```
 3. `sudo update-grub`
+
+
+## Install Extra Codecs
+
+```
+sudo apt-get install ubuntu-restricted-extras
+```
+
+
+## Install Clementine
+
+A better music player than Banshee.
+
+```
+sudo apt-get install clementine
+```
