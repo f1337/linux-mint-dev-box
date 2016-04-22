@@ -312,3 +312,11 @@ A better music player than Banshee.
 ```
 sudo apt-get install clementine
 ```
+
+
+## Install Steam
+
+1. [Download the Steam .deb](http://store.steampowered.com/about/) (click "Install Steam Now").
+2. Open with GDebi Package installer
+3. Ignore the warning that an older version is available in a software channel.
+4. Click "Install Package".
