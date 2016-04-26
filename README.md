@@ -87,13 +87,16 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
 ```
 sudo apt-get install autokey-gtk
 ```
-3. Run autokey, then Edit > Preferences > Choose "Automatically start AutoKey at login"
-4. Delete the pre-installed sample scripts in autokey, then File > New > Folder > Use Default > superb
-5. Copy my autokeys to your newly created autokey folder:
+3. Open AutoKey, then Edit > Preferences > Choose "Automatically start AutoKey at login"
+4. (optional) Delete the pre-installed sample scripts in autokey.
+5. File > Quit AutoKey (don't just close the window). Make sure there is no AutoKey tray icon.
+6. Copy my autokeys to your autokey config:
 ```
+mkdir ~/.config/autokeys/data/superb
 cp autokeys/*.py ~/.config/autokeys/data/superb/
 cp autokeys/.* ~/.config/autokeys/data/superb/
 ```
+7. Open AutoKey again. Test your new hot keys. Close the window to hide AutoKey while it runs in the background.
 
 Many thanks to Dražen Lučanin for publishing his
 [autokey dotfiles](https://github.com/metakermit/dotfiles/tree/master/autokey),
