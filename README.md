@@ -323,3 +323,10 @@ sudo apt-get install clementine
 2. Open with GDebi Package installer
 3. Ignore the warning that an older version is available in a software channel.
 4. Click "Install Package".
+
+
+## Mac-style `open` in Terminal
+
+```
+echo "alias 'open'='xdg-open'" >> ~/.bashrc
+```
