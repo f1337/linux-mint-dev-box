@@ -184,11 +184,11 @@ cd ~/.tor-browser_en-US/
 **UPDATE:** Chrome has a habit of pushing Xorg to 100% CPU usage with certain graphics cards, apparently especially in 64-bit environments.
 However, it is the only Linux browser supported by Netflix and Amazon Prime Video.
 
-Download the latest 64-bit .deb package from from https://www.google.com/chrome/browser.
-
 ```
-cd ~/Downloads
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install google-chrome-stable
 ```
 
 Chrome 64-bit on Linux is known to experience random freezes with certain video drivers when hardware acceleration is enabled.
@@ -320,7 +320,7 @@ sudo apt-get install clementine
 ## Install Steam
 
 1. [Download the Steam .deb](http://store.steampowered.com/about/) (click "Install Steam Now").
-2. Open with GDebi Package installer
+2. Open with GDebi Package installer (dpkg)
 3. Ignore the warning that an older version is available in a software channel.
 4. Click "Install Package".
 
