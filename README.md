@@ -39,17 +39,6 @@ Menu > Administration > Update Manager
 * Update everything, until there is nothing more to update
 
 
-## Synchronize the Pasteboards
-
-```
-sudo apt-get install autocutsel
-echo "autocutsel -fork &" >> ~/.xinitrc
-echo "autocutsel -selection PRIMARY -fork &" >> ~/.xinitrc
-```
-
-cf. https://mutelight.org/subtleties-of-the-x-clipboard
-
-
 ## Hijack Caps Lock
 
 System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose "Make Caps Lock an additional Ctrl"
@@ -233,6 +222,19 @@ Download the latest 64-bit .deb package from https://slack.com/downloads.
 ```
 cd ~/Downloads
 sudo dpkg -i slack-desktop-X.X.X-amd64.deb
+```
+
+
+## Install TeamViewer
+
+Someday, Screenhero will work on Linux?
+
+1. Download latest 64-bit/multiarch .deb package from http://www.teamviewer.com/en/download/linux/
+2. Install it using `dpkg`:
+```
+sudo apt-get install libjpeg62:i386
+cd ~/Downloads
+sudo dpkg -i teamviewer_X.X.X-amd64.deb
 ```
 
 
