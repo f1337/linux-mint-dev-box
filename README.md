@@ -39,6 +39,17 @@ Menu > Administration > Update Manager
 * Update everything, until there is nothing more to update
 
 
+## Synchronize the Pasteboards
+
+```
+sudo apt-get install autocutsel
+echo "autocutsel -fork &" >> ~/.xinitrc
+echo "autocutsel -selection PRIMARY -fork &" >> ~/.xinitrc
+```
+
+cf. https://mutelight.org/subtleties-of-the-x-clipboard
+
+
 ## Hijack Caps Lock
 
 System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose "Make Caps Lock an additional Ctrl"
