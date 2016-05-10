@@ -225,6 +225,22 @@ sudo dpkg -i slack-desktop-X.X.X-amd64.deb
 ```
 
 
+## Remove Pidgin
+
+It's a resource hog. Just remove it.
+
+```
+sudo apt-get remove pidgin
+```
+
+
+## Install Skype
+
+```
+sudo apt-get install Skype
+```
+
+
 ## Install VirtualBox
 
 ```
