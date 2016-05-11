@@ -20,7 +20,14 @@ Replace `nvidia-XXX` below with the version recommended on that page.
 ```
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo apt-get update
-sudo apt-get install -y nvidia-settings nvidia-XXX
+sudo apt-get install -y nvidia-prime nvidia-settings nvidia-XXX
+```
+
+
+## Install Broadcom WiFi Drivers
+
+```
+sudo apt-get install bcmwl-kernel-source
 ```
 
 
@@ -93,8 +100,8 @@ sudo apt-get install autokey-gtk
 6. Copy my autokeys to your autokey config:
 ```
 mkdir ~/.config/autokeys/data/superb
-cp autokeys/*.py ~/.config/autokeys/data/superb/
-cp autokeys/.* ~/.config/autokeys/data/superb/
+cp autokey/*.py ~/.config/autokey/data/superb/
+cp autokey/.* ~/.config/autokey/data/superb/
 ```
 7. Open AutoKey again. Test your new hot keys. Close the window to hide AutoKey while it runs in the background.
 
