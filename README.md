@@ -2,6 +2,7 @@
 
 A basic Linux Mint setup for software development
 
+![screenshot](screenshot.png)
 
 ## Set Dvorak Layout for Login
 
