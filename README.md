@@ -268,6 +268,14 @@ sudo dpkg -i vagrant_X.X.X_x86_64.deb
 ```
 
 
+## Install Keybase
+
+```
+curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb \
+&& sudo dpkg -i keybase-latest-amd64.deb
+```
+
+
 ## Install Dropbox
 
 Download the latest 64-bit .deb package from https://www.dropbox.com/install.
