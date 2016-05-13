@@ -54,6 +54,8 @@ System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose 
 
 ## Mac-Style "Super" Shortcuts
 
+TODO: This process can be automated with `dconf-editor`.
+
 To use the <super> (Windows or Command) key for Mac-style shortcuts:
 
 1. If using a Windows keyboard, System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
@@ -68,6 +70,11 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
   * Windows
     * Minimize window: Super-m
     * Show desktop: Super-F3
+    * Tiling and Snapping
+      * Push tile left: Ctrl-Alt-Left
+      * Push tile right: Ctrl-Alt-Right
+      * Push tile up: Ctrl-Alt-Up
+      * Push tile down: Ctrl-Alt-Down
   * Workspaces
     * Switch to left workspace: Ctrl-Left
     * Switch to right workspace: Ctrl-Right
@@ -92,6 +99,9 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
 
 
 2. Install AutoKey
+
+TODO: Replace with `sxhkd` (a window-manager agnostic solution that is actively maintained) and `xdotool` (for simulating pass-through shortcuts).
+
 ```
 sudo apt-get install autokey-gtk
 ```
