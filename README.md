@@ -182,6 +182,18 @@ sudo apt-get install synapse
 ```
 
 
+## Instal Workrave
+
+```
+sudo apt-get install workrave
+```
+
+My configuration:
+* 30s micro-breaks every 15m
+* 10m rest breaks every 45m; show 4 exercises
+* no daily limit
+
+
 ## Install Tor browser
 
 DO NOT USE A THIRD-PARTY PPA TO INSTALL Tor!
@@ -350,12 +362,14 @@ sudo apt-get install ubuntu-restricted-extras
 ```
 
 
-## Install Clementine
+## Install Tomahawk
 
-A better music player than Banshee.
+A better music player.
 
 ```
-sudo apt-get install clementine
+sudo add-apt-repository ppa:tomahawk/ppa
+sudo apt-get update
+sudo apt-get install tomahawk
 ```
 
 
