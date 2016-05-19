@@ -136,6 +136,15 @@ Terminator > Preferences > Profiles > Scrolling
 * Disable "Scroll on output"
 
 
+## Instal tig
+
+Command-line git tree tool.
+
+```
+sudo apt-get install tig
+```
+
+
 ## Setup Mouse Natural Scrolling
 
 ```
