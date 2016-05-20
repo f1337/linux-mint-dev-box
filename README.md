@@ -176,10 +176,10 @@ cf. https://bugs.chromium.org/p/chromium/issues/detail?id=582547
 Right-click the bottom panel > Modify Panel > Move Panel, then drag the panel to the top of the screen.
 
 ```
-sudo apt-get install cairo-dock
+sudo apt-get install docky
 ```
 
-After cairo-dock is installed and running, remove the task windows applet from the top panel.
+After Docky is installed and running, remove the task windows applet from the top panel.
 
 
 ## Install Synapse
@@ -362,6 +362,7 @@ GRUB_HIDDEN_TIMEOUT=0.0
 GRUB_TIMEOUT=0.0
 ```
 3. `sudo update-grub`
+4. Install a [ReFind theme](http://www.rodsbooks.com/refind/themes.html#known_themes)
 
 
 ## Install Extra Codecs
@@ -371,14 +372,10 @@ sudo apt-get install ubuntu-restricted-extras
 ```
 
 
-## Install Tomahawk
-
-A better music player.
+## Install Banshee
 
 ```
-sudo add-apt-repository ppa:tomahawk/ppa
-sudo apt-get update
-sudo apt-get install tomahawk
+sudo apt-get install banshee
 ```
 
 
