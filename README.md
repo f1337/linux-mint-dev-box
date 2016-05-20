@@ -395,3 +395,10 @@ sudo apt-get install tomahawk
 ```
 echo "alias 'open'='xdg-open'" >> ~/.bashrc
 ```
+
+
+## Yosemite Desktop Backgrounds
+
+```
+sudo cp -r /media/mf/Macintosh HD/Library/Desktop\ Pictures /usr/share/backgrounds/osx-yosemite
+```
