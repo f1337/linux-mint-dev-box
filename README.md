@@ -374,5 +374,5 @@ echo "alias 'open'='xdg-open'" >> ~/.bashrc
 ## Yosemite Desktop Backgrounds
 
 ```
-sudo cp -r /media/mf/Macintosh HD/Library/Desktop\ Pictures /usr/share/backgrounds/osx-yosemite
+sudo cp -r /media/username/Macintosh HD/Library/Desktop\ Pictures /usr/share/backgrounds/osx-yosemite
 ```
