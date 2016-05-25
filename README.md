@@ -82,29 +82,23 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
       * Switch to workspace 1: Ctrl-1
       * Switch to workspace 2: Ctrl-2
       * etc., as needed
-  * System
-    * Log out: Shift-Super-q
-    * Shut down: Ctrl-Alt-Super-Eject (use Delete or similar if no eject button on keyboard)
-    * Lock Screen: Ctrl-Shift-Eject (use Delete or similar if no eject button on keyboard)
-    * Suspend: Alt-Super-Eject (use Delete or similar if no eject button on keyboard)
-    * Screenshots and Recording
-      * Take a screenshot: Shift-Super-numbersign
-      * Take a screenshot of a window: Shift-Super-dollar
 
 
-2. Install sxhkd
+2. Install `sxhkd` and friends
 
-`sxhkd` ("Simple X hotkey daemon") is a lightweight, fast, and stable hotkey
+`sxhkd` ("Simple X hotkey daemon") is a lightweight, fast, and powerful hotkey
 tool with an unpronounceable name.
 
-`xdotool` sends events to X windows.
+`scrot` is a tool for taking screenshots.
+
+`xdotool` sends events to windows.
 
 `xkill` is a litte different than Force Quit (Mac) or Task Manager (Windows):
 it provides a graphical 'X' cursor which you then use to left-click the window
 you wish to force-quit. It can be canceled with any mouse click other than left.
 
 ```
-sudo apt-get install build-essential git libxcb-ewmh-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev xcb xdotool xkill
+sudo apt-get install build-essential git libxcb-ewmh-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev scrot xcb xdotool xkill
 git clone https://github.com/baskerville/sxhkd.git
 cd ./sxhkd && make && sudo make install
 cd ..

@@ -55,3 +55,48 @@ super + shift + {bracketleft,bracketright}
 # esc: force-quit
 super + alt + Escape
 	xkill
+
+
+
+#####################
+# LOG OUT/SHUT DOWN #
+# GNOME (+CINNAMON) #
+#####################
+
+# lock screen
+control + shift + Pause
+	gnome-screensaver-command -l
+
+# log out w/ prompt
+super + shift + q
+	gnome-session-quit --logout
+
+# log out w/o prompt
+alt + super + shift + q
+	gnome-session-quit --logout --no-prompt
+
+# reboot w/ prompt
+control + super + Pause
+	gnome-session-quit --reboot
+
+# suspend
+alt + super + Pause
+	dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+
+# shut down w/ prompt
+control + alt + super + Pause
+	gnome-session-quit --power-off
+
+
+
+###############
+# Screenshots #
+###############
+
+# screenshot: entire desktop
+super + shift + 3
+	scrot -e 'notify-send "Screenshot taken: $f"' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png
+
+# screenshot: focused window
+super + shift + 4
+	scrot -u -e 'notify-send "Screenshot taken: $f"' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png
