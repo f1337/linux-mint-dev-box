@@ -1,0 +1,57 @@
+#########
+# SUPER #
+#########
+
+# super + ? => ctrl + ?
+super + {a,f,l,n,p,q,r,s,t,w,x,z,equal,minus}
+	xdotool getwindowfocus key --clearmodifiers ctrl+{a,f,l,n,p,q,r,s,t,w,x,z,equal,minus}
+
+# c: copy
+# down: end of doc
+# up: start of doc
+super + {c,Down,Up}
+	xdotool getwindowfocus key --clearmodifiers ctrl+{Insert,End,Home}
+
+# backspace: delete
+# g: find next
+# left: start of line
+# right: end of line
+super + {BackSpace,g,Left,Right}
+	xdotool getwindowfocus key --clearmodifiers {Delete,F3,Home,End}
+
+# v: paste
+super + v
+	xdotool getwindowfocus key --clearmodifiers shift+Insert
+
+
+
+#################
+# SUPER + SHIFT #
+#################
+
+# down: select to end of doc
+# up: select to start of doc
+# z: redo
+super + shift + {Down,Up,z}
+	xdotool getwindowfocus key --clearmodifiers shift+ctrl+{End,Home,z}
+
+# g: find next
+# left: select to start of line
+# right: select to end of line
+super + shift + {g,Left,Right}
+	xdotool getwindowfocus key --clearmodifiers shift+{F3,Home,End}
+
+# [: previous tab
+# ]: next tab
+super + shift + {bracketleft,bracketright}
+	xdotool getwindowfocus key --clearmodifiers ctrl+{Page_Up,Page_Down}
+
+
+
+###############
+# SUPER + ALT #
+###############
+
+# esc: force-quit
+super + alt + Escape
+	xkill

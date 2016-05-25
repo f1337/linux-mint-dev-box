@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sxhkd
+Type=Application
+NoDisplay=true
+Exec=sxhkd
+Comment=Simple X hotkey daemon
