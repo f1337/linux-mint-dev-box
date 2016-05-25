@@ -90,38 +90,30 @@ To use the <super> (Windows or Command) key for Mac-style shortcuts:
     * Screenshots and Recording
       * Take a screenshot: Shift-Super-numbersign
       * Take a screenshot of a window: Shift-Super-dollar
-  * Custom Shortcuts > Add custom shortcut
-    * Name: Force quit
-    * Command: /usr/bin/xkill
-    * Keyboard bindings: Alt-Super-Escape
-
-`xkill` is a litte different than Force Quit (Mac) or Task Manager (Windows): it provides a graphical 'X' cursor which you then use to left-click on the window you wish to force-quit. It can be canceled with any mouse click other than left.
 
 
-2. Install AutoKey
+2. Install sxhkd
 
-TODO: Replace with `sxhkd` (a window-manager agnostic solution that is actively maintained) and `xdotool` (for simulating pass-through shortcuts).
+`sxhkd` ("Simple X hotkey daemon") is a lightweight, fast, and stable hotkey
+tool with an unpronounceable name.
+
+`xdotool` sends events to X windows.
+
+`xkill` is a litte different than Force Quit (Mac) or Task Manager (Windows):
+it provides a graphical 'X' cursor which you then use to left-click the window
+you wish to force-quit. It can be canceled with any mouse click other than left.
 
 ```
-sudo apt-get install autokey-gtk
+sudo apt-get install build-essential git libxcb-ewmh-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev xcb xdotool xkill
+git clone https://github.com/baskerville/sxhkd.git
+cd ./sxhkd && make && sudo make install
+cd ..
+mkdir -p ~/.config/autostart ~/.config/sxhkd
+cp config/autostart/sxhkd.desktop ~/.config/autostart/
+cp config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 ```
-3. Open AutoKey, then Edit > Preferences > Choose "Automatically start AutoKey at login"
-4. (optional) Delete the pre-installed sample scripts in autokey.
-5. File > Quit AutoKey (don't just close the window). Make sure there is no AutoKey tray icon.
-6. Copy my autokeys to your autokey config:
-```
-mkdir ~/.config/autokeys/data/superb
-cp autokey/*.py ~/.config/autokey/data/superb/
-cp autokey/.* ~/.config/autokey/data/superb/
-```
-7. Open AutoKey again. Test your new hot keys. Close the window to hide AutoKey while it runs in the background.
 
-Many thanks to Dražen Lučanin for publishing his
-[autokey dotfiles](https://github.com/metakermit/dotfiles/tree/master/autokey),
-from which these were derived.
-
-cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236),
-[AutoKey Special Keys](https://github.com/autokey/autokey/wiki/Special-Keys)
+cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](https://github.com/baskerville/sxhkd),
 
 
 ## Install Terminator
