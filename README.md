@@ -117,10 +117,10 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](
 
     ```
     # custom screenshot sound
-    load-sample screenshot /usr/share/sounds/freedesktop/stereo/camera-shutter.oga
+    load-sample screenshot /usr/share/sounds/freedesktop/stereo/screen-capture.oga
 
     # custom bell
-    load-sample bell /usr/share/sounds/freedesktop/stereo/window-attention.oga
+    load-sample bell /usr/share/sounds/freedesktop/stereo/bell.oga
     load-module module-x11-bell sample=bell
     ```
 
@@ -139,7 +139,8 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](
 4. Add the bell to the shell prompt (`nano ~/.bashrc`):
 
     ```
-    echo 'PROMPT_COMMAND=xkbbell' >> ~/.bashrc
+	echo 'xset b 65' >> ~.bashrc
+	echo 'PROMPT_COMMAND=xkbbell' >> ~/.bashrc
     ```
 
 
