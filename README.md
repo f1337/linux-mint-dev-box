@@ -444,6 +444,8 @@ sudo apt-get install banshee
 
 ## Mac-style `open` in Terminal
 
+**Not necessary when using Fish shell.**
+
 ```
 echo "alias 'open'='xdg-open'" >> ~/.bashrc
 ```
