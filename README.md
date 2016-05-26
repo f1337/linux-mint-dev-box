@@ -111,6 +111,17 @@ cp config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](https://github.com/baskerville/sxhkd),
 
 
+## Fish Shell
+
+```
+sudo apt-get install fish
+chsh -s /usr/bin/fish
+cp -R config/fish/functions/*.fish ~/.config/fish/functions/
+```
+
+cf. [https://fishshell.com/](https://fishshell.com/)
+
+
 ## Sounds
 
 1. `sudo nano /etc/pulse/default.pa` and add the following lines at the end of the file:
