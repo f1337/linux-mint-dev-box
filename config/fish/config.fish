@@ -8,6 +8,12 @@ xset b 80
 
 
 #
+# std prompt config
+#
+set __fish_prompt_color_carat (set_color -o blue)
+set __fish_prompt_color_user (set_color -o blue)
+
+#
 # git prompt config
 #
 set normal (set_color normal)
