@@ -116,10 +116,31 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](
 ```
 sudo apt-get install fish
 chsh -s /usr/bin/fish
+cp config/fish/config.fish ~/.config/fish/config.fish
 cp -R config/fish/functions/*.fish ~/.config/fish/functions/
 ```
 
 cf. [https://fishshell.com/](https://fishshell.com/)
+
+
+## Cowsay, Ponysay
+
+Terminal fun. Pick cowsay+friends, ponysay, or both.
+
+### Cowsay
+
+```
+sudo apt-get install cowsay fortune lolcat
+sudo cp cows/fish.cow /usr/share/cowsay/cows/
+```
+
+### Ponysay
+
+```
+sudo add-apt-repository ppa:vincent-c/ponysay
+sudo apt-get update
+sudo apt-get install ponysay
+```
 
 
 ## Sounds
