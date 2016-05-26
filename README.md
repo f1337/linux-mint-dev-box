@@ -4,6 +4,7 @@ A basic Linux Mint setup for software development
 
 ![screenshot](screenshot.png)
 
+
 ## Set Dvorak Layout for Login
 
 See http://unix.stackexchange.com/a/136383, but use the following keymap:
@@ -108,6 +109,38 @@ cp config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 ```
 
 cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](https://github.com/baskerville/sxhkd),
+
+
+## Sounds
+
+1. `sudo nano /etc/pulse/default.pa` and add the following lines at the end of the file:
+
+    ```
+    # custom screenshot sound
+    load-sample screenshot /usr/share/sounds/freedesktop/stereo/camera-shutter.oga
+
+    # custom bell
+    load-sample bell /usr/share/sounds/freedesktop/stereo/window-attention.oga
+    load-module module-x11-bell sample=bell
+    ```
+
+2. Then restart pulse:
+
+    ```
+    pulseaudio -k
+    ```
+
+3. Verify the bell is audible:
+
+    ```
+    xkbbell
+    ```
+
+4. Add the bell to the shell prompt (`nano ~/.bashrc`):
+
+    ```
+    echo 'PROMPT_COMMAND=xkbbell' >> ~/.bashrc
+    ```
 
 
 ## Install Terminator
@@ -220,6 +253,18 @@ Chrome 64-bit on Linux is known to experience random freezes with certain video 
 To disable hardware acceleration Chrome > Settings > Advanced > System > uncheck "Use hardware acceleration when available", then restart Chrome.
 
 cf. http://www.phoronix.com/scan.php?page=news_item&px=MTYyMDk, http://www.techsupportforum.com/forums/f64/solved-system-freezing-continuously-while-running-chrome-840698.html#post5291842
+
+
+## Install Vim
+
+Install `vim`, `gvim`, plugins, themes and `vimrc`:
+
+```
+sudo apt-get install vim vim-gtk
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+cp vimrc ~/.vimrc
+```
 
 
 ## Install Atom and Its Packages
