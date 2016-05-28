@@ -1,26 +1,26 @@
-#########
-# SUPER #
-#########
+########
+# META #
+########
 
-# super + ? => ctrl + ?
-super + {a,f,l,n,p,q,r,s,t,w,x,z,equal,minus}
+# alt + ? => ctrl + ?
+alt + {a,f,l,n,p,q,r,s,t,w,x,z,equal,minus}
 	xdotool getwindowfocus key --clearmodifiers ctrl+{a,f,l,n,p,q,r,s,t,w,x,z,equal,minus}
 
 # c: copy
 # down: end of doc
 # up: start of doc
-super + {c,Down,Up}
+alt + {c,Down,Up}
 	xdotool getwindowfocus key --clearmodifiers ctrl+{Insert,End,Home}
 
 # backspace: delete
 # g: find next
 # left: start of line
 # right: end of line
-super + {BackSpace,g,Left,Right}
+alt + {BackSpace,g,Left,Right}
 	xdotool getwindowfocus key --clearmodifiers {Delete,F3,Home,End}
 
 # v: paste
-super + v
+alt + v
 	xdotool getwindowfocus key --clearmodifiers shift+Insert
 
 
@@ -32,18 +32,18 @@ super + v
 # down: select to end of doc
 # up: select to start of doc
 # z: redo
-super + shift + {Down,Up,z}
+alt + shift + {Down,Up,z}
 	xdotool getwindowfocus key --clearmodifiers shift+ctrl+{End,Home,z}
 
 # g: find next
 # left: select to start of line
 # right: select to end of line
-super + shift + {g,Left,Right}
+alt + shift + {g,Left,Right}
 	xdotool getwindowfocus key --clearmodifiers shift+{F3,Home,End}
 
 # [: previous tab
 # ]: next tab
-super + shift + {bracketleft,bracketright}
+alt + shift + {bracketleft,bracketright}
 	xdotool getwindowfocus key --clearmodifiers ctrl+{Page_Up,Page_Down}
 
 
@@ -68,7 +68,7 @@ control + shift + Pause
 	gnome-screensaver-command -l
 
 # log out w/ prompt
-super + shift + q
+alt + shift + q
 	gnome-session-quit --logout
 
 # log out w/o prompt
@@ -76,7 +76,7 @@ alt + super + shift + q
 	gnome-session-quit --logout --no-prompt
 
 # reboot w/ prompt
-control + super + Pause
+control + alt + Pause
 	gnome-session-quit --reboot
 
 # suspend
@@ -94,9 +94,9 @@ control + alt + super + Pause
 ###############
 
 # screenshot: entire desktop
-super + shift + 3
+alt + shift + 3
 	scrot -e 'notify-send "Screenshot saved" "$f" && pactl play-sample screenshot' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png
 
 # screenshot: focused window
-super + shift + 4
+alt + shift + 4
 	scrot -u -e 'notify-send "Screenshot saved" "$f" && pactl play-sample screenshot' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png

@@ -53,29 +53,29 @@ Menu > Administration > Update Manager
 System Settings > Keyboard > Layouts > Options > Caps Lock key behavior: Choose "Make Caps Lock an additional Ctrl"
 
 
-## Mac-Style "Super" Shortcuts
+## Mac-Style Meta Shortcuts
 
 TODO: This process can be automated with `dconf-editor`.
 
-To use the <super> (Windows or Command) key for Mac-style shortcuts:
+To use the <alt> or <super> (Windows or Command) key for Mac-style shortcuts:
 
-1. If using a Windows keyboard, System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
+1. If using a Mac keyboard, System Settings > Keyboard > Layouts > Options > Alt/Win Key behavior: Choose "Alt is swapped with Win"
 2. System Settings > Keyboard > Shortcuts
   * General
     * Toggle Scale: Ctrl-Down
     * Toggle Expo: Ctrl-Up
-    * Cycle through open windows: Super-Tab
-    * Cycle backwards through open windows: Shift-Super-Tab
-    * Cycle through open windows of the same application: Super-grave
-    * Cycle backwards through open windows of the same application: Shift-Super-tilde
+    * Cycle through open windows: Alt-Tab
+    * Cycle backwards through open windows: Shift-Alt-Tab
+    * Cycle through open windows of the same application: Alt-grave
+    * Cycle backwards through open windows of the same application: Shift-Alt-tilde
   * Windows
-    * Minimize window: Super-m
-    * Show desktop: Super-F3
+    * Minimize window: Alt-m
+    * Show desktop: Alt-F3
     * Tiling and Snapping
-      * Push tile left: Ctrl-Alt-Left
-      * Push tile right: Ctrl-Alt-Right
-      * Push tile up: Ctrl-Alt-Up
-      * Push tile down: Ctrl-Alt-Down
+      * Push tile left: Ctrl-Super-Left
+      * Push tile right: Ctrl-Super-Right
+      * Push tile up: Ctrl-Super-Up
+      * Push tile down: Ctrl-Super-Down
   * Workspaces
     * Switch to left workspace: Ctrl-Left
     * Switch to right workspace: Ctrl-Right

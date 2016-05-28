@@ -1,13 +1,13 @@
 '.platform-win32, .platform-linux':
-  'cmd-shift-F': 'project-find:show',
-  'cmd-\\': 'tree-view:toggle'
+  'alt-shift-F': 'project-find:show',
+  'alt-\\': 'tree-view:toggle'
 'atom-workspace, atom-workspace atom-text-editor':
-  'cmd-shift-M': 'markdown-preview:toggle'
+  'alt-shift-M': 'markdown-preview:toggle'
 '.platform-linux, .platform-linux .command-palette atom-text-editor':
-  'cmd-shift-P': 'command-palette:toggle'
+  'alt-shift-P': 'command-palette:toggle'
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
-  'cmd-e': 'find-and-replace:use-selection-as-find-pattern'
+  'alt-e': 'find-and-replace:use-selection-as-find-pattern'
 'atom-workspace atom-text-editor:not([mini])':
-  'cmd-/': 'editor:toggle-line-comments',
-  'cmd-[': 'editor:outdent-selected-rows',
-  'cmd-\]': 'editor:indent-selected-rows'
+  'alt-/': 'editor:toggle-line-comments',
+  'alt-[': 'editor:outdent-selected-rows',
+  'alt-\]': 'editor:indent-selected-rows'

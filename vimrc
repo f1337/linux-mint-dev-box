@@ -79,18 +79,30 @@ call plug#end()
 :nnoremap <silent> <C-w> :bp\|bd #<CR>
 
 " comment
-:nnoremap <silent> <C-/> gcc
+:nmap <M-/> gcc
+:vmap <M-/> gc
 
 " copy
-:vnoremap <C-Insert> \"+y
+:nnoremap <C-Insert> y
 " cut
-:vnoremap <silent> <C-x> \"+x
+:nnoremap <silent> <C-x> d
 " paste
-:vnoremap <S-Insert> \"+gP
-" redo
-:nnoremap <C-y> <C-r>
-" select all
+:nnoremap <S-Insert> p
+
+"" select all
 :nnoremap <C-a> ggVG
+" shift-arrow selection
+nmap <S-Up> v<Up>
+nmap <S-Down> v<Down>
+nmap <S-Left> v<Left>
+nmap <S-Right> v<Right>
+vmap <S-Up> <Up>
+vmap <S-Down> <Down>
+vmap <S-Left> <Left>
+vmap <S-Right> <Right>
+
+" redo
+:nnoremap <M-S-z> <C-r>
 " undo
 :nnoremap <C-z> u
 
