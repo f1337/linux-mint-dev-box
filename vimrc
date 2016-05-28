@@ -22,6 +22,21 @@ set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" strip trailing whitespace on save,
+" for select file types
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
 
 
 " Plugins
@@ -45,6 +60,9 @@ Plug 'plasticboy/vim-markdown', { 'for': [ 'md', 'markdown' ] }
 " commentor
 Plug 'tpope/vim-commentary'
 
+" project-drawer antidote
+Plug 'tpope/vim-vinegar'
+
 call plug#end()
 
 
@@ -64,13 +82,15 @@ call plug#end()
 :nnoremap <silent> <C-/> gcc
 
 " copy
-:vnoremap <C-Insert> y
+:vnoremap <C-Insert> \"+y
 " cut
-:vnoremap <silent> <C-x> d
+:vnoremap <silent> <C-x> \"+x
 " paste
-:vnoremap <S-Insert> p
+:vnoremap <S-Insert> \"+gP
 " redo
 :nnoremap <C-y> <C-r>
+" select all
+:nnoremap <C-a> ggVG
 " undo
 :nnoremap <C-z> u
 
