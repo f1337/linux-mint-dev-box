@@ -1,3 +1,5 @@
+let mapleader=";"
+
 " force vim to use bash, no matter the shell
 set shell=/bin/bash
 
@@ -43,6 +45,8 @@ autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <
 
 call plug#begin('~/.vim/plugged')
 
+" .editorconfig support
+Plug 'editorconfig/editorconfig-vim'
 
 " ultra-light powerline
 Plug 'vim-airline/vim-airline'
@@ -51,9 +55,11 @@ let g:airline#extensions#tabline#enabled = 1
 "Plug 'ap/vim-buftabline'
 set laststatus=2
 
+" lazy-load json plugin
+Plug 'f1337/vim-json', { 'for': [ 'json' ] }
+
 " vim-markdown prereq
 Plug 'godlygeek/tabular'
-
 " lazy-load markdown plugin
 Plug 'plasticboy/vim-markdown', { 'for': [ 'md', 'markdown' ] }
 
@@ -118,3 +124,12 @@ vmap <S-Right> <Right>
 
 " save
 :nnoremap <silent> <C-s> :w<CR>
+
+" toggle netrw
+:map <Bslash> -
+
+
+
+" per-project .vimrc
+" set exrc
+" set secure
