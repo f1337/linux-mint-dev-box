@@ -4,7 +4,6 @@ A basic Linux Mint setup for software development
 
 ![screenshot](screenshot.png)
 
-
 ## Set Dvorak Layout for Login
 
 See http://unix.stackexchange.com/a/136383, but use the following keymap:
@@ -168,12 +167,6 @@ sudo apt-get install ponysay
     xkbbell
     ```
 
-4. Add the bell to the shell prompt (`nano ~/.bashrc`):
-
-    ```
-	echo 'xset b 65' >> ~.bashrc
-	echo 'PROMPT_COMMAND=xkbbell' >> ~/.bashrc
-    ```
 
 
 ## Install Terminator
@@ -431,6 +424,16 @@ sudo apt-get install ubuntu-restricted-extras
 
 ```
 sudo apt-get install banshee
+```
+
+
+## Install PlayOnLinux
+
+```
+wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
+sudo wget http://deb.playonlinux.com/playonlinux_trusty.list -O /etc/apt/sources.list.d/playonlinux.list
+sudo apt-get update
+sudo apt-get install playonlinux
 ```
 
 

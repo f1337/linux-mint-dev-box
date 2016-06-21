@@ -119,6 +119,9 @@ vmap <S-Right> <Right>
 " find previous
 :nnoremap <S-F3> N
 
+" new file
+:nnoremap <C-n> :ene<CR>
+
 " quit
 :nnoremap <silent> <C-q> :qa<CR>
 
