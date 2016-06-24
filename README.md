@@ -168,17 +168,16 @@ sudo apt-get install ponysay
     ```
 
 
+## rxvt
 
-## Install Terminator
+Terminal emulator. Highly customizable using `~/.Xdefaults`.
+cf. https://wiki.archlinux.org/index.php/rxvt-unicode ,
+https://bbs.archlinux.org/viewtopic.php?id=56605
 
 ```
-sudo apt-get install terminator
-sudo apt-get remove gnome-terminal
+sudo apt-get install rxvt-unicode-256color
+cp Xdefaults ~/.Xdefaults
 ```
-
-Terminator > Preferences > Profiles > Scrolling
-* Scrollback: 3500 lines
-* Disable "Scroll on output"
 
 
 ## Instal tig
@@ -227,25 +226,32 @@ sudo apt-get install docky
 After Docky is installed and running, remove the task windows applet from the top panel.
 
 
-## Install Synapse
+## Synapse
+
+An application launcher ala Spotlight or Launchy.
 
 ```
 sudo add-apt-repository ppa:synapse-core/testing
 sudo apt-get update
-sudo apt-get install synapse
+sudo apt-get install synapse gnome-dictionary
 ```
 
 
-## Instal Workrave
+## Pomodoro
+
+An RSI timer.
+
+1. System Settings > Applets > Available applets (online) tab
+2. Find Pomodoro Timer and install
+
+
+## Hamster
+
+Time tracking.
 
 ```
-sudo apt-get install workrave
+sudo apt-get install hamster-applet hamster-indicatior
 ```
-
-My configuration:
-* 30s micro-breaks every 15m
-* 10m rest breaks every 45m; show 4 exercises
-* no daily limit
 
 
 ## Install Tor browser
@@ -254,13 +260,14 @@ DO NOT USE A THIRD-PARTY PPA TO INSTALL Tor!
 
 1. Download the latest 64-bit installer from https://www.torproject.org/download/download-easy.html.en
 2. Install it using `dpkg`:
-```
-cd ~/Downloads
-tar -xvJf tor-browser-linux64-5.5.4_en-US.tar.xz
-mv tor-browser_en-US/ ~/.tor-browser_en-US
-cd ~/.tor-browser_en-US/
-./start-tor-browser.desktop --register-app
-```
+
+    ```
+    cd ~/Downloads
+    tar -xvJf tor-browser-linux64-5.5.4_en-US.tar.xz
+    mv tor-browser_en-US/ ~/.tor-browser_en-US
+    cd ~/.tor-browser_en-US/
+    ./start-tor-browser.desktop --register-app
+    ```
 
 
 ## Install Chrome

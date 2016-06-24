@@ -1,0 +1,54 @@
+!----------------------------------------------
+! COLORS
+! (derived from Terminator's "Ambience" scheme)
+!----------------------------------------------
+
+*background: #300a24
+*foreground: #ffffff
+
+! 0: black
+*color0:  #2e3436
+*color8:  #555753
+! 1: red
+*color1:  #cc0000
+*color9:  #ef2929
+! 2: green
+*color2:  #4e9a06
+*color10: #8ae234
+! 3: yellow
+*color3:  #c4a000
+*color11: #fce94f
+! 4: blue
+*color4:  #3465a4
+*color12: #729fcf
+! 5: magenta
+*color5:  #75507b
+*color13: #ad7fa8
+! 6: cyan
+*color6:  #06989a
+*color14: #34e2e2
+! 7: white
+*color7:  #d3d7cf
+*color15: #eeeeec
+
+
+!----------------------------------------------
+! URXVT
+!----------------------------------------------
+URxvt*cursorBlink:       true
+URxvt*depth:             32
+URxvt*font:              xft:Monaco:size=12
+!URxvt*geometry:          112x22
+URxvt*iconFile:          /usr/share/icons/Mint-X/apps/96/terminator.svg
+URxvt*perl-ext-common:   default,matcher
+URxvt*matcher.button:    1
+URxvt*saveLines:         5000
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   true
+URxvt*scrollColor:       #000000
+URxvt*scrollTtyKeypress: true
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*urlLauncher:       google-chrome-stable
+
+
