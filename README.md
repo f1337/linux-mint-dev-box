@@ -179,6 +179,11 @@ sudo apt-get install rxvt-unicode-256color
 cp Xdefaults ~/.Xdefaults
 ```
 
+The default icon is ugly. Easy fix:
+
+1. `sudo vim /usr/share/applications/rxvt-unicode.desktop`
+2. Change `Icon=urxvt_48x48.xpm` to `Icon=gksu-root-terminal`
+
 
 ## Instal tig
 
