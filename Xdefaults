@@ -43,7 +43,7 @@ URxvt*iconFile:          /usr/share/icons/Mint-X/apps/96/terminator.svg
 URxvt*perl-ext-common:   default,matcher
 URxvt*matcher.button:    1
 URxvt*saveLines:         5000
-URxvt*scrollBar:         false
+!URxvt*scrollBar:         false
 URxvt*scrollBar_right:   true
 URxvt*scrollColor:       #000000
 URxvt*scrollTtyKeypress: true

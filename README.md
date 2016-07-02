@@ -185,7 +185,16 @@ The default icon is ugly. Easy fix:
 2. Change `Icon=urxvt_48x48.xpm` to `Icon=gksu-root-terminal`
 
 
-## Instal tig
+## tmux
+
+Terminal multiplexer.
+
+```
+sudo apt-get install tmux
+```
+
+
+## tig
 
 Command-line git tree tool.
 
