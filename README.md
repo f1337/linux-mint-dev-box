@@ -4,6 +4,29 @@ A basic Linux Mint setup for software development
 
 ![screenshot](screenshot.png)
 
+
+## TODO: Reorganize this doc
+
+This document has been updated on-the-fly and is unorganized. Reorganization thoughts:
+
+* Development Tools
+* Gaming
+* Mac-influences
+* Dvorak
+
+
+## git 2.x
+
+The default version of git for Ubuntu 14.04 is 1.9.1.
+git 2.x provides automatic commit signing, among other improvements.
+
+```
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+```
+
+
 ## Set Dvorak Layout for Login
 
 See http://unix.stackexchange.com/a/136383, but use the following keymap:
@@ -98,7 +121,7 @@ it provides a graphical 'X' cursor which you then use to left-click the window
 you wish to force-quit. It can be canceled with any mouse click other than left.
 
 ```
-sudo apt-get install build-essential git libxcb-ewmh-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev scrot xcb xdotool xkill
+sudo apt-get install build-essential libxcb-ewmh-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev scrot xcb xdotool xkill
 git clone https://github.com/baskerville/sxhkd.git
 cd ./sxhkd && make && sudo make install
 cd ..
@@ -183,6 +206,18 @@ The default icon is ugly. Easy fix:
 
 1. `sudo vim /usr/share/applications/rxvt-unicode.desktop`
 2. Change `Icon=urxvt_48x48.xpm` to `Icon=gksu-root-terminal`
+
+
+## irssi
+
+IRC client.
+
+```
+sudo apt-get install irssi
+cp .irssi/config ~/.irssi/
+cp .irssi/*.theme ~/.irssi/
+cp -r .irssi/scripts ~/.irssi/
+```
 
 
 ## tmux
