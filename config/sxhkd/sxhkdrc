@@ -33,8 +33,8 @@ alt + space
 	rofi -show run
 
 # alt + tab: window switcher
-alt + tab
-	rofi -show window
+# alt + tab
+#	rofi -show window
 
 
 #################
