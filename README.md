@@ -265,20 +265,21 @@ cf. http://askubuntu.com/questions/137444/is-there-anyway-to-enable-system-wide-
 cf. https://bugs.chromium.org/p/chromium/issues/detail?id=582547
 
 
-## Dock and Panel Magic
+## lemonbar
 
-Right-click the bottom panel > Modify Panel > Move Panel, then drag the panel to the top of the screen.
+A lightweight panel.
 
 ```
-sudo apt-get install docky
+sudo apt-get install libxcb-xinerama0-dev libxcb-randr0-dev
+git clone https://github.com/LemonBoy/bar.git
+cd bar
+make && sudo make install
 ```
-
-After Docky is installed and running, remove the task windows applet from the top panel.
 
 
 ## rofi
 
-An application launcher and window manager.
+An lightweight application launcher and window manager.
 
 ```
 curl -LO https://launchpad.net/ubuntu/+source/rofi/0.15.7-1/+build/7645955/+files/rofi_0.15.7-1_amd64.deb
