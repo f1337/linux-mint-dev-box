@@ -24,6 +24,18 @@ alt + v
 	xdotool getwindowfocus key --clearmodifiers shift+Insert
 
 
+################
+# app-switcher #
+################
+
+# alt + space: app switcher
+alt + space
+	rofi -show run
+
+# alt + tab: window switcher
+alt + tab
+	rofi -show window
+
 
 #################
 # SUPER + SHIFT #

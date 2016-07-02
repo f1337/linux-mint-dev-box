@@ -13,6 +13,7 @@ This document has been updated on-the-fly and is unorganized. Reorganization tho
 * Gaming
 * Mac-influences
 * Dvorak
+* Automate setup with Puppet
 
 
 ## git 2.x
@@ -275,14 +276,13 @@ sudo apt-get install docky
 After Docky is installed and running, remove the task windows applet from the top panel.
 
 
-## Synapse
+## rofi
 
-An application launcher ala Spotlight or Launchy.
+An application launcher and window manager.
 
 ```
-sudo add-apt-repository ppa:synapse-core/testing
-sudo apt-get update
-sudo apt-get install synapse gnome-dictionary
+curl -LO https://launchpad.net/ubuntu/+source/rofi/0.15.7-1/+build/7645955/+files/rofi_0.15.7-1_amd64.deb
+sudo dpkg -i rofi_0.15.7-1_amd64.deb
 ```
 
 
