@@ -30,7 +30,7 @@ alt + v
 
 # alt + space: app switcher
 alt + space
-	rofi -show run
+	rofi -show run -width 30
 
 # alt + tab: window switcher
 # alt + tab

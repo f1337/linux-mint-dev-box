@@ -194,13 +194,13 @@ sudo apt-get install ponysay
 
 ## rxvt
 
-Terminal emulator. Highly customizable using `~/.Xdefaults`.
+Terminal emulator. Highly customizable using `~/.Xresources`.
 cf. https://wiki.archlinux.org/index.php/rxvt-unicode ,
 https://bbs.archlinux.org/viewtopic.php?id=56605
 
 ```
 sudo apt-get install rxvt-unicode-256color
-cp Xdefaults ~/.Xdefaults
+cp .Xresources ~/.Xresources
 ```
 
 The default icon is ugly. Easy fix:
@@ -279,7 +279,7 @@ make && sudo make install
 
 ## rofi
 
-An lightweight application launcher and window manager.
+A lightweight application launcher and window manager.
 
 ```
 curl -LO https://launchpad.net/ubuntu/+source/rofi/0.15.7-1/+build/7645955/+files/rofi_0.15.7-1_amd64.deb
