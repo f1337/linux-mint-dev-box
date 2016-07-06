@@ -107,8 +107,8 @@ control + alt + super + Pause
 
 # screenshot: entire desktop
 alt + shift + 3
-	scrot -e 'notify-send "Screenshot saved" "$f" && pactl play-sample screenshot' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png
+	scrot -e 'notify-send -i camera --hint=int:transient:1 "Screenshot saved" "$f" && pactl play-sample screenshot' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png
 
 # screenshot: focused window
 alt + shift + 4
-	scrot -u -e 'notify-send "Screenshot saved" "$f" && pactl play-sample screenshot' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png
+	scrot -u -e 'notify-send -i camera --hint=int:transient:1 "Screenshot saved" "$f" && pactl play-sample screenshot' ~/Pictures/Screenshot\ from\ %Y-%m-%d\ %T.png

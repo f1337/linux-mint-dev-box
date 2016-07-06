@@ -9,10 +9,12 @@ set number
 " Folding is infuriating
 set nofoldenable
 
+" mouse support in term
+set mouse=a
 
 
 " Theme
-colo molokai
+colorscheme molokai
 syntax on
 
 
@@ -48,6 +50,9 @@ call plug#begin('~/.vim/plugged')
 " .editorconfig support
 Plug 'editorconfig/editorconfig-vim'
 
+" vim-markdown prereq
+Plug 'godlygeek/tabular'
+
 " ultra-light powerline
 Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
@@ -55,16 +60,20 @@ let g:airline#extensions#tabline#enabled = 1
 "Plug 'ap/vim-buftabline'
 set laststatus=2
 
-" lazy-load json plugin
-Plug 'f1337/vim-json', { 'for': [ 'json' ] }
-
-" vim-markdown prereq
-Plug 'godlygeek/tabular'
-" lazy-load markdown plugin
-Plug 'plasticboy/vim-markdown', { 'for': [ 'md', 'markdown' ] }
+" autoclose parens and brackets
+Plug 'Townk/vim-autoclose'
 
 " commentor
 Plug 'tpope/vim-commentary'
+
+" lazy-load json plugin
+Plug 'f1337/vim-json', { 'for': [ 'json' ] }
+
+" lazy-load markdown plugin
+Plug 'plasticboy/vim-markdown', { 'for': [ 'md', 'markdown' ] }
+
+" all the language support plugins, lazy-loaded
+Plug 'sheerun/vim-polyglot'
 
 " project-drawer antidote
 Plug 'tpope/vim-vinegar'
@@ -75,7 +84,8 @@ call plug#end()
 
 " Keybindings
 
-" hijack built-in mappings
+" autocomplete
+imap <C-Space> <C-X><C-O>
 
 " buffer selection =~ 'select next/prev tab'
 :nnoremap <silent> <C-PageDown> :bnext!<CR>
@@ -108,9 +118,10 @@ vmap <S-Left> <Left>
 vmap <S-Right> <Right>
 
 " redo
-:nnoremap <M-S-z> <C-r>
+:nnoremap <C-S-z> <C-r>
 " undo
-:nnoremap <C-z> u
+map <C-z> u
+map! <C-z> <C-O>u
 
 " find
 :nnoremap <C-f> /
