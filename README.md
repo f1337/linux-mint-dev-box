@@ -137,6 +137,8 @@ cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](
 ## Fish Shell
 
 ```
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
 sudo apt-get install fish
 chsh -s /usr/bin/fish
 cp config/fish/config.fish ~/.config/fish/config.fish
