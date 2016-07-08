@@ -212,6 +212,7 @@ https://bbs.archlinux.org/viewtopic.php?id=56605
 sudo apt-get install rxvt-unicode-256color
 cp .Xresources ~/.Xresources
 curl -L https://raw.githubusercontent.com/muennich/urxvt-perls/master/clipboard -o ~/.urxvt/ext/clipboard --create-dirs
+curl -L https://raw.githubusercontent.com/simmel/urxvt-resize-font/master/resize-font -o ~/.urxvt/ext/resize-font --create-dirs
 ```
 
 The default icon is ugly. Easy fix:
