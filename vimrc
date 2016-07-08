@@ -59,6 +59,7 @@ Plug 'godlygeek/tabular'
 " ultra-light powerline
 Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 "Plug 'itchyny/lightline.vim'
 "Plug 'ap/vim-buftabline'
 set laststatus=2
