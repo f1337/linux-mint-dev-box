@@ -438,15 +438,35 @@ Follow the directions here: https://support.1password.com/1password-in-wine/
 
 Linux fonts are pretty rough to look at all day. This will install some MS True Type fonts. It is still up to the reader to apply the fonts where desired (Terminator, etc).
 
-```
-cd ~/.fonts
-git clone https://github.com/hbin/top-programming-fonts.git
-git clone https://gist.github.com/1634235.git ./powerline-monaco
-git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git
-sudo apt-get install ttf-mscorefonts-installer
-```
+1. `cd ~/.fonts`
+2. Get some nice programming/terminal fonts:
 
-`git clone https://github.com/powerline/fonts.git ./powerline`
+    ```
+    git clone https://github.com/hbin/top-programming-fonts.git
+    ```
+3. Get the San Francisco font for GUI windows:
+
+    ```
+    git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git-core
+    ```
+
+4. Get some powerline fonts for airline, git status line in fish:
+
+    ```
+    git clone https://github.com/powerline/fonts.git ./powerline
+    ```
+
+5. Update the font cache:
+
+    ```
+    sudo fc-cache -f -v
+    ```
+
+6. Install some MS fonts (makes some web pages look better):
+
+    ```
+    sudo apt-get install ttf-mscorefonts-installer
+    ```
 
 
 ## Enable Firewall

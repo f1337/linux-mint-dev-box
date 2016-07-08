@@ -37,7 +37,12 @@
 !----------------------------------------------
 URxvt*cursorBlink:       true
 URxvt*depth:             32
-URxvt*font:              xft:Monaco:size=12
+URxvt*font:              xft:Meslo\ LG\ S\ for\ Powerline:size=12
+!URxvt*font:              xft:DejaVu\ Sans\ Mono\ for\ Powerline:regular:size=12
+!URxvt*imFont:            xft:DejaVu\ Sans\ Mono\ for\ Powerline:regular:size=12
+!URxvt*boldFont:          xft:DejaVu\ Sans\ Mono\ for\ Powerline:bold:size=12
+!URxvt*italicFont:        xft:DejaVu\ Sans\ Mono\ for\ Powerline:oblique:size=12
+!URxvt*boldItalicFont:    xft:DejaVu\ Sans\ Mono\ for\ Powerline:bold:oblique:size=12
 !URxvt*geometry:          112x22
 URxvt*iconFile:          /usr/share/icons/Mint-X/apps/96/terminator.svg
 URxvt*perl-ext-common:   default,matcher
