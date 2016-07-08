@@ -56,6 +56,11 @@ sudo apt-get install bcmwl-kernel-source
 ```
 
 
+## Install Broadcom Bluetooth Drivers
+
+http://askubuntu.com/a/632348
+
+
 ## Fix APM issues
 
 IFF Mint hangs with a black screen on shutdown and/or suspend, try these steps.
@@ -429,13 +434,19 @@ sudo dpkg -i dropbox_X.X.X_amd64.deb
 Follow the directions here: https://support.1password.com/1password-in-wine/
 
 
-## Install MS Fonts
+## Fonts
 
 Linux fonts are pretty rough to look at all day. This will install some MS True Type fonts. It is still up to the reader to apply the fonts where desired (Terminator, etc).
 
 ```
+cd ~/.fonts
+git clone https://github.com/hbin/top-programming-fonts.git
+git clone https://gist.github.com/1634235.git ./powerline-monaco
+git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git
 sudo apt-get install ttf-mscorefonts-installer
 ```
+
+`git clone https://github.com/powerline/fonts.git ./powerline`
 
 
 ## Enable Firewall
