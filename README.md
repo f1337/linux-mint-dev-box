@@ -475,6 +475,11 @@ Linux fonts are pretty rough to look at all day. This will install some MS True 
     sudo apt-get install ttf-mscorefonts-installer
     ```
 
+More awesome fonts:
+
+* https://github.com/chrissimpkins/codeface
+* https://github.com/ryanoasis/nerd-fonts
+
 
 ## Enable Firewall
 
