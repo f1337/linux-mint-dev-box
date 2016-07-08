@@ -36,6 +36,15 @@ See http://unix.stackexchange.com/a/136383, but use the following keymap:
 
 System Settings > Keyboard > Layouts > Options > Switching to another layout: Choose "Menu"
 
+`/etc/default/keyboard`:
+
+```
+XKBMODEL="pc105"
+XKBLAYOUT="us"
+XKBVARIANT="dvorak"
+XKBOPTIONS=""
+```
+
 
 ## Install NVIDIA Drivers
 
