@@ -45,7 +45,9 @@ URxvt*font:              xft:Meslo\ LG\ S\ for\ Powerline:size=12
 !URxvt*boldItalicFont:    xft:DejaVu\ Sans\ Mono\ for\ Powerline:bold:oblique:size=12
 !URxvt*geometry:          112x22
 URxvt*iconFile:          /usr/share/icons/Mint-X/apps/96/terminator.svg
-URxvt*perl-ext-common:   default,matcher
+URxvt*perl-ext-common:   default,matcher,clipboard
+URxvt.keysym.C-Insert:   perl:clipboard:copy
+URxvt.keysym.S-Insert:   perl:clipboard:paste
 URxvt*matcher.button:    1
 URxvt*saveLines:         5000
 !URxvt*scrollBar:         false

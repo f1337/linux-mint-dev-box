@@ -139,7 +139,7 @@ cp config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 cf. [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236), [sxhkd](https://github.com/baskerville/sxhkd),
 
 
-## Fish Shell
+## Fish Shell & Plugins
 
 ```
 sudo apt-add-repository ppa:fish-shell/release-2
@@ -148,6 +148,9 @@ sudo apt-get install fish
 chsh -s /usr/bin/fish
 cp config/fish/config.fish ~/.config/fish/config.fish
 cp -R config/fish/functions/*.fish ~/.config/fish/functions/
+wget https://git.io/fundle -O ~/.config/fish/functions/fundle.fish
+exec fish
+fundle install
 ```
 
 cf. [https://fishshell.com/](https://fishshell.com/)
@@ -199,7 +202,7 @@ sudo apt-get install ponysay
     ```
 
 
-## rxvt
+## urxvt
 
 Terminal emulator. Highly customizable using `~/.Xresources`.
 cf. https://wiki.archlinux.org/index.php/rxvt-unicode ,
@@ -208,6 +211,7 @@ https://bbs.archlinux.org/viewtopic.php?id=56605
 ```
 sudo apt-get install rxvt-unicode-256color
 cp .Xresources ~/.Xresources
+curl -L https://raw.githubusercontent.com/muennich/urxvt-perls/master/clipboard -o ~/.urxvt/ext/clipboard --create-dirs
 ```
 
 The default icon is ugly. Easy fix:
@@ -355,6 +359,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 curl -fLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 cp vimrc ~/.vimrc
 ```
+
+Then `:PlugInstall` from withing `vim` or `gvim` to install plugins.
 
 
 ## Install Atom and Its Packages
