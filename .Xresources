@@ -1,11 +1,10 @@
 !----------------------------------------------
 ! COLORS
-! (derived from Terminator "Ambience" scheme)
 !----------------------------------------------
 
+! (derived from Terminator "Ambience" theme)
 *background: #300a24
 *foreground: #ffffff
-
 ! 0: black
 *color0:  #2e3436
 *color8:  #555753
@@ -47,7 +46,11 @@ URxvt.letterSpace:       -1
 !URxvt*geometry:          112x22
 URxvt*iconFile:          /usr/share/icons/Mint-X/apps/96/terminator.svg
 URxvt*perl-ext-common:   default,matcher,clipboard,resize-font
-URxvt.keysym.M-k:        echo -ne '\\033c'\n
+! \040 is "space"
+! prefixing shell commands with space hides them from history
+URxvt.keysym.M-k:        \040echo -ne '\\033c'\n
+URxvt.keysym.C-n:        \040urxvt > /dev/null ^&1 &\n
+URxvt.keysym.C-w:        \040exit\n
 URxvt.keysym.C-Insert:   perl:clipboard:copy
 URxvt.keysym.S-Insert:   perl:clipboard:paste
 URxvt*matcher.button:    1
@@ -67,11 +70,13 @@ URxvt*urlLauncher:       google-chrome-stable
 ! ------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------
-rofi.color-enabled: true
-rofi.color-window: #002b37,#008ed4
-rofi.color-normal: #002b37,#819396,#003643,#008ed4,#ffffff
-rofi.color-active: #002b37,#008ed4,#003643,#008ed4,#66c6ff
-rofi.color-urgent: #002b37,#da4281,#003643,#008ed4,#890661
-!rofi.line-margin: 6
-rofi.lines: 10
-!rofi.separator-style: solid
+!rofi.bw:                             28
+rofi.color-enabled:                  true
+rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#61AFEF,#ffffff
+rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#61AFEF,#dc322f
+rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#61AFEF,#c2cad0
+rofi.color-window:                   #61AFEF,#61AFEF
+!rofi.line-margin:                    6
+rofi.lines:                          10
+!rofi.separator-style:                solid
+rofi.width:                          600
