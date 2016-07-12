@@ -33,7 +33,7 @@ alt + space
 	rofi -show run -width 30
 
 # alt + tab: window switcher
-# alt + tab
+#alt + Tab
 #	rofi -show window
 
 
