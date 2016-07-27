@@ -353,6 +353,8 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 ```
 
+Optional: Install Koji NISHIDA's theme: https://chrome.google.com/webstore/detail/koji-nishida/acganlmcjehnfmehkmlimgkaloifodlf?hl=en
+
 Chrome 64-bit on Linux is known to experience random freezes with certain video drivers when hardware acceleration is enabled.
 To disable hardware acceleration Chrome > Settings > Advanced > System > uncheck "Use hardware acceleration when available", then restart Chrome.
 
