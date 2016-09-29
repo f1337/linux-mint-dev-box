@@ -173,7 +173,7 @@ Terminal fun. Pick cowsay+friends, ponysay, or both.
 
 ```
 sudo apt-get install cowsay fortune lolcat
-sudo cp cows/fish.cow /usr/share/cowsay/cows/
+sudo cp cows/*.cow /usr/share/cowsay/cows/
 ```
 
 ### Ponysay
